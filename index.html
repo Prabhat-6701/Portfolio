@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="animate-name">Hi, I'm <span>Prabhat Kumar</span></h1>
+            <p>Welcome to my personal portfolio</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="image.jpg" alt="Your Photo">
+                <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="content-section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item" onclick="openModal('project1')">
+                    <img src="image1.jpg" alt="Project Image">
+                    <h3>Project One</h3>
+                    <p>Description of project one.</p>
+                </div>
+                <div class="project-item" onclick="openModal('project2')">
+                    <img src="image2.png" alt="Project Image">
+                    <h3>Project Two</h3>
+                    <p>Description of project two.</p>
+                </div>
+                <div class="project-item" onclick="openModal('project3')">
+                    <img src="image3.jpg" alt="Project Image">
+                    <h3>Project Three</h3>
+                    <p>Description of project three.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="content-section">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="resume.pdf" class="btn" download>Download My Resume</a>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: contact@myportfolio.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
